@@ -11,3 +11,8 @@ The user may not upload over the quota.
 
 There is also an option to download a ZIP of all a user's files.
 
+## Login Details
+Valid logins are:
+1. alice
+2. bob
+3. carol
