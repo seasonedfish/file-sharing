@@ -4,6 +4,7 @@
  * A user must first sign in (using sign_in.php) to see this page.
  */
 require_once("config/values.php");
+require_once("config/files.php");
 
 class InvalidUsernameException extends Exception {}
 
@@ -70,25 +71,6 @@ function upload(string $username, array $file): bool
 
     # https://www.php.net/manual/en/features.file-upload.post-method.php
     return move_uploaded_file($file['tmp_name'], $upload_dest);
-}
-
-/**
- * Returns true if the given file should be displayed.
- * The "." and ".." files should not be displayed.
- * This function is used as the filter in get_files_array.
- * @param string $file
- * @return bool
- */
-function is_displayed_file(string $file): bool
-{
-    return $file != "." && $file != "..";
-}
-
-function get_files_array(string $username): array
-{
-    $user_dir = sprintf("%s/%s", DATA_ROOT, $username);
-    $ls = scandir($user_dir);
-    return array_filter($ls, "is_displayed_file");
 }
 
 function get_files_table(string $username): string
@@ -192,6 +174,8 @@ include("includes/head.php")
         ?>
     </small>
 
+    <h2>Download ZIP</h2>
+    <a href="zip.php">Download</a>
 </body>
 
 <?php
