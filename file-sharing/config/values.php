@@ -6,7 +6,7 @@
 /**
  * Specifies the root directory for the data files.
  */
-const DATA_ROOT = "/Users/fisher/file-sharing";
+const DATA_ROOT = "/srv/data/file-sharing";
 
 /**
  * Specifies the total bytes each user can upload.
