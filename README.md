@@ -1,8 +1,5 @@
 # CSE330
-498640
-pyjamafish
-
-http://ec2-54-243-4-131.compute-1.amazonaws.com/file-sharing/sign_in.php
+498640 / pyjamafish
 
 ## Creative Portion
 The users have a quota, which is 2MB.
