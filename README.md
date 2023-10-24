@@ -1,6 +1,8 @@
 # CSE330 File Sharing Website
-This repo contains my implementation of [CSE 330's Module 2 project](https://classes.engineering.wustl.edu/cse330/index.php?title=Module_2).
+This repo contains my implementation of CSE 330 module 2, a file sharing website.
 It was created fall 2022.
+
+The spec can be found [here]([https://classes.engineering.wustl.edu/cse330/index.php?title=Module_2](https://classes.engineering.wustl.edu/cse330/index.php?title=Module_2#Group_Project)).
 
 ## Creative Portion
 The users have a quota, which is 2MB.
